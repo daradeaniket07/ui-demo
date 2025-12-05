@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = "force-dynamic";
+
 import { useRouter } from "next/navigation";
 
 export default function OPR352({ awb }: { awb: string }) {
@@ -12,32 +14,7 @@ export default function OPR352({ awb }: { awb: string }) {
   return (
     <div className="max-w-[1200px] mx-auto px-4 pb-8 mt-6">
 
-      {/* -------- AWB STRIP --------
-      <div className="bg-white border rounded-md p-3 mb-4 shadow-sm">
-        <div className="flex items-center gap-4"> */}
-
-          {/* AWB Number
-          <div>
-            <div className="text-xs text-gray-600">AWB Number</div>
-            <div className="flex items-center gap-2 mt-1">
-              <div className="bg-yellow-300 px-2 py-1 rounded text-sm font-medium min-w-[56px] text-center">
-                {awb ? awb.slice(0, 3) : "098"}
-              </div>
-              <div className="bg-yellow-200 px-3 py-1 rounded text-sm font-medium">
-                {awb ? awb.slice(3) : "30680650"}
-              </div>
-            </div>
-          </div> */}
-
-          {/* <div className="ml-auto flex items-center gap-2">
-            <button className="px-3 py-1 border rounded text-sm bg-green-600 text-white">
-              List
-            </button>
-            <button className="px-3 py-1 border rounded text-sm">Clear</button>
-          </div>
-        </div>
-      </div> */}
-
+     
       {/* -------- EXTERNAL MESSAGING -------- */}
       <div className="bg-white border rounded shadow-sm">
 
